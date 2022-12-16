@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 12px;">
+<html lang="en"">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,79 +8,96 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="bg-light">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
-<nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="https://tragicpanda10.github.io/finale/">TragicPanda10</a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="navbar-item"><a href="https://tragicpanda10.github.io/finale/" class="nav-link">Home</a></li>
                 <li class="navbar-item"><a href="#" class="nav-link">About Me</a></li>
-                <li class="navbar-item"><a href="#" class="nav-link">Learn More</a></li>
+                <li class="navbar-item"><a href="#" class="nav-link">Projects</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div class="d-flex flex-column blankets justify-content-center align-items-center">
-    <image src="images/printer logo.png" alt="image of story board" style="width: 15rem; height: 15rem;"></image>
+    <image src="images/printer logo.png" alt="image of story board" style="width: 10rem; height: 10rem;"></image>
     <h1 class="text-light display-1"> Personas and Storyboarding</h1>
-    <h2 class="text-light h3">Understanding how printers are used at Brown University</h2> 
+    <p class="text-light lead">Understanding how printers are used at Brown University</p> 
 </div>
 
-<div id="description"> 
-  <div class="container-fluid bg-light text-center pb-5">
-    <h1 class="display-1">The Goal</h1>
-    <p style="padding: 0rem 8rem;">
-      The purpose of this project was to practice collecting real information to understand how users interact with an interface.
-      By doing so, we can develop products or features that will serve users in the best ways possible. 
-    </p>
-    <div class="row" style="justify-content: space-around;">
-      <img src="images/diagram-top.png" alt="image of diagram top side" style="width: 45rem; height:45rem; padding: 5px;">
-      <img src="images/diagram-side.png" alt="image of diagram of printer interface" style="width: 45rem; height:45rem; padding: 5px;">
+<div id="description" class="section-space">
+  <div class="body-space"> 
+    <div class="container-fluid bg-light pb-3">
+      <p>
+        Besides classes, social life, and advancing their careers, students at Brown University must also master how to use the printers. 
+        It is generally accepted that the printing system is confusing, especially to new users, but more research 
+        is necessary to directly identify and address the problems that makes printing so hard. 
+      </p>  
+      <div class="row" style="justify-content: space-around;">
+        <div style="width:fit-content; max-width:30vw">
+          <img class='shadow mb-4' src="images/diagram-top.png" alt="image of diagram top side" style="width: 20vw; height:20vw; padding: 5px;">
+          <div>Top-down sketch of the printer interface</div>
+        </div>
+        <div style="width:fit-content; max-width:30vw">
+          <img class='shadow mb-4' src="images/diagram-side.png" alt="image of diagram of printer interface" style="width: 20vw; height:20vw; padding: 5px;">
+          <div>Front sketch of the printer interface.</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div id="procedure"> 
-  <div class=" container-fluid bg-white justify-content-center">
-    <h1 class="text-center display-2">Research and Methodology</h1>
-    <p class="text-center">In order to get a better idea of how people print at Brown using the printing service, I 
-      observed and interviewed three random people in the Sciences Library basement who were printing
-      papers out. 
+  <div class="p-3 accent d-flex flex-column justify-content-center">
+    <div class="body-space">
+      <h1 class="titling">Objective</h1>
+      <p class="fs-4 lead">
+        Perform user research on the printers and summarize the interactions using personas and storyboarding. 
+      </p>
+    </div>
+    
+  </div> 
+
+<div id="procedure" class="body-space"> 
+  <div class=" container-fluid bg-light align-items-center justify-content-center flex-column">
+    <h1 class="titling">Interviewing</h1>
+    <p>In order to get a better idea of how people print at Brown using the printing service, I 
+      observed and interviewed three people in the Sciences Library basement who were printing papers out. 
     </p>
     <div class="row">
-      <div class="col" style="padding: 3rem;">
-        <h2>Questions</h2>
-        <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action" id="list-diff-list" data-bs-toggle="list" href="#list-diff" role="tab" aria-controls="list-diff">
+      <div class="col" style="padding: 1rem;">
+        <div class="subtitling mb-3">Questions</div>
+        <div class="list-group fs-6" id="list-tab">
+          <a class="list-group-item">
             How hard did you find the printer to use?</a>
-          <a class="list-group-item list-group-item-action" id="list-times-list" data-bs-toggle="list" href="#list-times" role="tab" aria-controls="list-times">
+          <a class="list-group-item">
             How often have you used the printer?</a>
-          <a class="list-group-item list-group-item-action" id="list-hard-list" data-bs-toggle="list" href="#list-hard" role="tab" aria-controls="list-hard">
+          <a class="list-group-item">
             Is there anything that confused you about using the printer interface? How about the first time you used the printer?</a>
-          <a class="list-group-item list-group-item-action" id="list-change-list" data-bs-toggle="list" href="#list-change" role="tab" aria-controls="list-change">
+          <a class="list-group-item">
             If you could change one thing about how to navigate the printer, what would it be?</a>
-          <a class="list-group-item list-group-item-action" id="list-access-list" data-bs-toggle="list" href="#list-access" role="tab" aria-controls="list-access">
+          <a class="list-group-item">
             Do you think that features of the printer are easy to find and use?
           </a>
         </div>
       </div>
       <div class="col" style="padding: 3rem;">
-        <h2>Summary of Responses</h2>
-        <ul class="list text-start">
-          <li>Experienced (10+ times used) and unexperienced (less than 4 times) users have no problems navigating the printing interface.</li>
-          <li>The online printer service is annoying to use and confusing to learn at first.</li>
-          <li>People want to know where the printers are around campus.</li>
-          <li>Users don't know how to use features like copying papers or selecting pages to print.</li>
+        <div class="subtitling mb-3">Summary of Responses</div>
+        <ul class="list fs-6">
+          <li>Experienced (10+ times used) and unexperienced (less than 4 times) users had no problems navigating the physical printing interface.</li>
+          <li>The online printer service was annoying to use and confusing to learn at first.</li>
+          <li>People wanted to know where the printers are around campus.</li>
+          <li>Users didn't know how to use features like copying papers or selecting pages to print.</li>
         </ul>
       </div>
     </div>
-    <div class="row">
-      <h2 class="display-5">Observations</h2>
-      <p style="padding: 0rem 5rem;">
+    <div class="pb-5">
+      <h2 class="titling">Observations</h2>
+      <p>
         All three observed users swiped their cards at the printing station. The swipe changed the screen to the printing queue page.
         The amount of time between this page and the completion of printing varied between about 20 seconds to 5 minutes.
         One user brought her computer to the printer and appeared to be modifying a document before printing her paper.
@@ -91,67 +108,76 @@
 </div>
 
 
-<div id="code" class="container-fluid bg-dark text-left text-light pb-5">
-  <h2 class="display-2 text-center">Developing Personas</h2>
+<div id="code" class="d-flex flex-column text-left body-space" style="margin-bottom:-1rem;">
+  <h2 class="titling">Developing Personas</h2>
   <p class="lead text-center">
     Two provisional personas were created using the observations and responses recorded from users. 
   </p>
-  <div class="row">
-    <img src="images/hurriedhector.png" style="width: auto; height: 40rem; padding: 3rem">
-    <div class="col">
-      <p style="padding: 3rem 0rem">
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <img class="shadow" src="images/hurriedhector.png" style="width: 920px; height:auto; margin: 3rem">
+    <div class="m-3">
+      <p>
         Hector is a junior at Brown. He has class in 30 minutes and needs to print his draft for review.
         In his haste, Hector forgets to format his pages perfectly before uploading them. He is forced to fix
         the mistakes from his laptop and reupload everything instead of being able to do so from the interface. 
         Hector represents the cohort of users that are familiar with using the printers at Brown but also face the 
-        time challenges that university has. His forgetfulness could stem from stress of finals, fatigue from all-nighters,
+        time challenges that university has. His forgetfulness could stem from stress of finals, fatigue,
         or social pressures, which are all highly relevant issues to Brown students.
       </p>
     </div> 
-    <div class="row">
-      <div class="col">
-        <p style="padding: 3rem 1rem">
-          Nate is a new student and has never used the printer at Brown before. He struggles with the unfamiliar 
-          process of queuing a printing job from the computer as well as which settings can be changed or not.
-          Where settings can be changed is also important and not straightforward. Nate doesn't know where he can
-          print his papers around campus, either. His limited knowledge of the interface slows down how fast he's
-          able to print, which could be problematic for close deadlines. 
-          Nate is representative of new users, which is a large proportion of the user base since nearly 1600 
-          freshman learn to use the printers each year. As a new user, Nate's biggest problem is unfamiliarity; 
-          the way to print papers takes at least a few times to get used to it, and some people will need help
-          their first time printing.
-        </p>
-      </div>
-      <img src="images/newbienate.png" style="width: auto; height: 40rem; padding: 3rem">
+    <img class="shadow" src="images/newbienate.png" style="width:920px; height:auto; margin: 3rem">
+    <div class="m-3">
+      <p>
+        Nate is a new student and has never used the printer at Brown before. He struggles with the unfamiliar 
+        process of queuing a printing job from the computer. Nate doesn't know where he can
+        print his papers around campus, either. His limited knowledge of the interface slows down how fast he's
+        able to print, which could be problematic for close deadlines. 
+        Nate is representative of new users, which is a large proportion of the user base since nearly 1600 
+        freshman learn to use the printers each year. As a new user, Nate's biggest problem is unfamiliarity; 
+        printing papers takes at least a few times to get used to it, and some people will need help with
+        their first time printing.
+      </p>
     </div>
   </div>
 </div>
 
-<div id="storyboard" class="container-fluid bg-light text-center pb-5">
-  <h1 class="display-2">Storyboard</h1>
-  <p class="lead">Hurried Hector </p>
+<div id="storyboard" class="container-fluid bg-light pb-5 body-space">
+  <h1 class="m-3 titling">Storyboard</h1>
+  <p>The storyboard takes one of the personas I created and places them in a scenario that exemplifies how that persona
+    would interact with the printer. This is helpful for thinking about what issues certain groups might face when using the 
+    printer.
+  </p>
+  <div class="text-center">
+  <p class="subtitling">Hurried Hector </p>
   <div class="row pt-5 justify-content-center">
     <div class="col">
-      <img src="images/Storyboard1.jpg" style="height: auto; width:75rem">
-      <img src="images/Storyboard2.jpg" style="height: auto; width:75rem">
-      <img src="images/Storyboard3.jpg" style="height: auto; width:75rem">
+      <img src="images/Storyboard1.jpg" style="height: auto; width:55vw; max-width:1080px">
+      <img src="images/Storyboard2.jpg" style="height: auto; width:55vw; max-width: 1080px;">
+      <img src="images/Storyboard3.jpg" style="height: auto; width:55vw; max-width: 1080px">
     </div>
+  </div>
   </div>
 </div>
 
 
-<div id="ending" class="text-center justify-content-center container-fluid text-light bg-dark pb-5">
-  <h4 class="display-2">Conclusions and Recap</h4>
-  <div class="container">
-    <div class="row justify-content-center">
-      <p class="text-start">
-        By observing users interacting with the printers and interviewing them, the way that students used the Brown printing system
-        was able to be recorded. Using that information, two personas representing specific groups of users were created.
-        The personas gave a framework and expectation for how a typical user might be expected to interact with the printer, and 
-        that framework was used to illustrate the full user experience of printing from the perspective of one of the personas.
-        This approach makes potential areas of improvement easier to identify as well as revealing areas where developers and 
-        users have conflicting viewpoints in terms of usage.
-      </p>
+<div id="ending" class=" justify-content-center container-fluid text-light bg-dark pb-5">
+  <div class="body-space">
+      <h4 class="display-6">Takeaways</h4>
+    <div class="container">
+      <div class="row">
+        <ul class="list-group list-group-flush ms-5" style="max-width:960px">
+          <li class="list-group-item bg-dark text-light fs-4">
+            • Asking the right questions in the right way is critical for getting useful data from users.
+          </li>
+          <li class="list-group-item bg-dark text-light fs-4">
+            • Using real data can reduce biases from the development side and identify previously unnoticed issues.
+          </li>
+          <li class="list-group-item bg-dark text-light fs-4">
+            • Personas and storyboards help designers think about their designs from the perspective of the users.
+          </li>
+
+        </ul>
+      </div>
     </div>
   </div>
 </div>
